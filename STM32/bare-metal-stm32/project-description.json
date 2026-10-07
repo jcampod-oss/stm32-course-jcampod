@@ -11,16 +11,16 @@
       "toolchain_prefix": "",
       "sources": [
         {
-          "path": "Src/syscall.c"
+          "path": "Core/Src/syscall.c"
         },
         {
-          "path": "Src/sysmem.c"
+          "path": "Core/Src/sysmem.c"
         },
         {
-          "path": "Src/main.c"
+          "path": "Core/Src/main-semaforo.c"
         },
         {
-          "path": "Src/startup_stm32f411xx.S"
+          "path": "Core/Src/startup_stm32f411xx.S"
         }
       ],
       "tools": [
@@ -40,7 +40,7 @@
             "-O0",
             "-g3",
             "-ggdb",
-            "-IInc",
+            "-ICore/Inc",
             "-DRTE_DEVICE_STARTUP_STM32F4XX",
             "-DDEBUG",
             "-x",
@@ -65,7 +65,7 @@
             "-O0",
             "-g3",
             "-ggdb",
-            "-IInc",
+            "-ICore/Inc",
             "-DRTE_DEVICE_STARTUP_STM32F4XX",
             "-DDEBUG"
           ]
@@ -86,7 +86,7 @@
             "-O0",
             "-g3",
             "-ggdb",
-            "-IInc",
+            "-ICore/Inc",
             "-DRTE_DEVICE_STARTUP_STM32F4XX",
             "-DDEBUG",
             "-fno-rtti",
@@ -124,16 +124,16 @@
       "toolchain_prefix": "",
       "sources": [
         {
-          "path": "Src/syscall.c"
+          "path": "Core/Src/syscall.c"
         },
         {
-          "path": "Src/sysmem.c"
+          "path": "Core/Src/sysmem.c"
         },
         {
-          "path": "Src/main.c"
+          "path": "Core/Src/main-semaforo.c"
         },
         {
-          "path": "Src/startup_stm32f411xx.S"
+          "path": "Core/Src/startup_stm32f411xx.S"
         }
       ],
       "tools": [
@@ -151,7 +151,7 @@
             "-Wpedantic",
             "-Wno-unused-parameter",
             "-Os",
-            "-IInc",
+            "-ICore/Inc",
             "-DRTE_DEVICE_STARTUP_STM32F4XX",
             "-x",
             "assembler-with-cpp",
@@ -173,7 +173,7 @@
             "-Wpedantic",
             "-Wno-unused-parameter",
             "-Os",
-            "-IInc",
+            "-ICore/Inc",
             "-DRTE_DEVICE_STARTUP_STM32F4XX"
           ]
         },
@@ -191,7 +191,7 @@
             "-Wpedantic",
             "-Wno-unused-parameter",
             "-Os",
-            "-IInc",
+            "-ICore/Inc",
             "-DRTE_DEVICE_STARTUP_STM32F4XX",
             "-fno-rtti",
             "-fno-exceptions",
