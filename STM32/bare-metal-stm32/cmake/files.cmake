@@ -2,7 +2,7 @@
 target_sources(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/syscall.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/sysmem.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/main-semaforo.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/main-week-01.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Core/Src/startup_stm32f411xx.S"
 )
 
